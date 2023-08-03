@@ -11,7 +11,7 @@ class FindByIdCommand extends Command {
   }
 
   @override
-  String get description => 'Find student by id';
+  String get description => 'Finaaaad student by id';
 
   @override
   String get name => 'byId';
