@@ -4,9 +4,7 @@ import 'package:args/command_runner.dart';
 class FindByIdCommand extends Command {
   final StudentRepository repository;
 
-  FindByIdCommand(
-    this.repository,
-  ) {
+  FindByIdCommand(this.repository, aaaaaaaa) {
     argParser.addOption('id', help: 'Student Id', abbr: 'i');
   }
 
