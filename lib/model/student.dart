@@ -46,9 +46,10 @@ class Student {
       name: map['name'] ?? '',
       age: map['age'],
       nameCourses: List<String>.from(map['nameCourses'] ?? <String>[]),
-      courses:
-          map['courses'].map<Course>((cursoMap) => Course.fromMap(cursoMap)) ??
-              <Course>[],
+      courses: map['courses']
+              .map<Course>((cursoMap) => Course.fromMap(cursoMap))
+              .toList() ??
+          <Course>[],
       address: Address.fromMap(map['address'] ?? <String, dynamic>{}),
     );
   }
